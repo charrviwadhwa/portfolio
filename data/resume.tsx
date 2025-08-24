@@ -191,9 +191,8 @@ export const DATA = {
       technologies: [
         "Next.js",
         "Typescript",
-       "Supabase",
+        "Supabase",
         "TailwindCSS",
-        ,
       ],
       links: [
         {

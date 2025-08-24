@@ -90,7 +90,7 @@ export const DATA = {
     {
       school: "Maharaja Surajmal Institute of Technology",
       href: "https://msit.in",
-      degree: "BTech,Information Technology (CGPA 9.31)",
+      degree: "BTech, Information Technology (CGPA 9.31)",
       logoUrl: "/msit.png",
       start: "2023",
       end: "2027",

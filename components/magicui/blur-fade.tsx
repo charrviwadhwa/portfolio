@@ -26,7 +26,7 @@ const BlurFade = ({
 }: BlurFadeProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
-  // ✅ Only use once & amount
+  // Observe element
   const inViewResult = useInView(ref, { once: true, amount: 0.1 });
   const isInView = !inView || inViewResult;
 
@@ -46,7 +46,7 @@ const BlurFade = ({
       transition={{
         delay: 0.04 + delay,
         duration,
-        ease: "easeOut",
+        ease: [0.25, 0.1, 0.25, 1], // smooth easing
       }}
       className={className}
     >

@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { motion, AnimatePresence, type Variants } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useMemo } from "react";
 
 interface BlurFadeTextProps {
@@ -31,59 +31,48 @@ const BlurFadeText = ({
   };
 
   const combinedVariants = variant || defaultVariants;
-
   const characters = useMemo(() => Array.from(text), [text]);
 
   if (animateByCharacter) {
     return (
       <div className="flex">
-        <AnimatePresence>
-          {characters.map((char, i) => (
-            <motion.span
-              key={i}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={combinedVariants}
-              transition={{
-                delay: delay + i * characterDelay,
-                duration,
-                ease: "easeOut",
-                repeat: Infinity,      // replaces yoyo
-                repeatType: "mirror",  // mirrors back and forth
-              }}
-              className={cn("inline-block", className)}
-              style={{ width: char.trim() === "" ? "0.2em" : "auto" }}
-            >
-              {char}
-            </motion.span>
-          ))}
-        </AnimatePresence>
+        {characters.map((char, i) => (
+          <motion.span
+            key={i}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={combinedVariants}
+            transition={{
+              delay: delay + i * characterDelay,
+              duration,
+              ease: "easeOut",
+            }}
+            className={cn("inline-block", className)}
+            style={{ width: char.trim() === "" ? "0.25em" : "auto" }}
+          >
+            {char}
+          </motion.span>
+        ))}
       </div>
     );
   }
 
   return (
-    <div className="flex">
-      <AnimatePresence>
-        <motion.span
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
-          variants={combinedVariants}
-          transition={{
-            delay,
-            duration,
-            ease: "easeOut",
-            repeat: Infinity,
-            repeatType: "mirror",
-          }}
-          className={cn("inline-block", className)}
-        >
-          {text}
-        </motion.span>
-      </AnimatePresence>
-    </div>
+    <motion.span
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={combinedVariants}
+      transition={{
+        delay,
+        duration,
+        ease: "easeOut",
+      }}
+      className={cn("inline-block", className)}
+    >
+      {text}
+    </motion.span>
   );
 };
 

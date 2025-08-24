@@ -6,17 +6,23 @@ import { Button } from "@/components/ui/button";
 import { SunIcon, MoonIcon } from "lucide-react"; 
 
 export function ModeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, resolvedTheme } = useTheme();
+
+  // Use resolvedTheme for hydration-safe theme detection
+  const currentTheme = resolvedTheme;
 
   return (
     <Button
       variant="ghost"
       size="icon"
       className="px-2"
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
     >
-      <SunIcon className="h-[1.2rem] w-[1.2rem] text-neutral-800 dark:hidden dark:text-neutral-200" />
-      <MoonIcon className="hidden h-[1.2rem] w-[1.2rem] text-neutral-800 dark:block dark:text-neutral-200" />
+      {currentTheme === "dark" ? (
+        <SunIcon className="h-[1.2rem] w-[1.2rem] text-neutral-200" />
+      ) : (
+        <MoonIcon className="h-[1.2rem] w-[1.2rem] text-neutral-800" />
+      )}
     </Button>
   );
 }

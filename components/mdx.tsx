@@ -1,5 +1,5 @@
 import Image, { ImageProps } from "next/image";
-import Link, { LinkProps } from "next/link";
+import Link from "next/link";
 import React from "react";
 
 interface TableProps {
@@ -10,9 +10,7 @@ interface TableProps {
 }
 
 function Table({ data }: TableProps) {
-  const headers = data.headers.map((header, index) => (
-    <th key={index}>{header}</th>
-  ));
+  const headers = data.headers.map((header, index) => <th key={index}>{header}</th>);
   const rows = data.rows.map((row, index) => (
     <tr key={index}>
       {row.map((cell, cellIndex) => (
@@ -74,7 +72,7 @@ function slugify(str: string) {
 
 function createHeading(level: number) {
   const Heading = ({ children }: { children: React.ReactNode }) => {
-    const slug = slugify(children as string);
+    const slug = slugify(typeof children === "string" ? children : String(children));
     return React.createElement(
       `h${level}`,
       { id: slug },

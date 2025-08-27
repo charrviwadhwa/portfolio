@@ -66,7 +66,7 @@ export const DATA = {
       href: "",
       badges: [],
       location: "Hybrid",
-      title: "Full Stack Engineer",
+      title: "Full Stack Developer",
       logoUrl: "/karmapoints.png",
       start: "August 2025",
       end: "Present",

@@ -121,6 +121,26 @@ export const DATA = {
     },
   ],
   projects: [
+     {
+      title: "Qrious",
+      href: "",
+      dates: "September 2025 ",
+      active: true,
+      description:"Qrious is a QR-based attendance application designed to make attendance tracking faster, smarter, and error-free for educational institutions. It eliminates manual entry and proxy attendance by allowing students to mark attendance simply by scanning a unique QR code generated for each class session." 
+      ,technologies: [
+        "React Native",
+        "Nodejs",
+        "PostgreSQL","DrizzleORM"
+      ],
+      links: [
+       {
+          type: "Source",
+          href: "https://github.com/charrviwadhwa/SIH2025",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:"/k.mp4"    },
     {
       title: "GitPeek",
       href: "https://gitpeek1.vercel.app/",
@@ -209,28 +229,7 @@ export const DATA = {
       image: "",
       video: "/hackxplore.mp4",
     },
-    {
-      title: "Inspiro",
-      href: "",
-      dates: "January 2025 ",
-      active: true,
-      description:
-        "A Chrome extension that brings daily boost of motivation right to your browser. Inspiro delivers handpicked inspirational quotes and affirmations each time you open a new tab, helping you stay positive and focused throughout your day.",
-      technologies: [
-        "JavaScript",
-        "Chrome Extensions API",
-      ],
-      links: [
-       {
-          type: "Source",
-          href: "https://github.com/charrviwadhwa/Inspiro",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/inspiro.png",
-      video:
-        "",
-    },
+   
   ],
   hackathons: [
     {

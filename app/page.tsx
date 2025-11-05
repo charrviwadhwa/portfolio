@@ -13,7 +13,7 @@ import Markdown from "react-markdown";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
-  // ✅ Memoize name so it doesn't flicker
+  
   const firstName = useMemo(() => DATA.name.split(" ")[0], []);
 
   return (

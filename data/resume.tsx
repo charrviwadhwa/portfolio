@@ -275,7 +275,7 @@ export const DATA = {
   opensource: [
     {
       title: "Girlscript Summer of Code",
-      dates: "August 1st - Present",
+      dates: "August 2025 - October 2025",
       location: "Mentor",
       description:"Guiding devs through open source contributions and clean coding practices.",
         image:"https://miro.medium.com/v2/resize:fit:400/1%2AZfYWXN0zA6TqQQ7wGNJUOg.jpeg",
@@ -283,7 +283,7 @@ export const DATA = {
     },
     {
       title: "Hacktoberfest",
-      dates: "Oct 1st - 31st, 2025",
+      dates: "Oct 1st - 31st, 2024",
       location: "Contributer",
       description:"Enhanced 3 open-source projects during Hacktoberfest by submitting 8 pull requests, resolving 3 critical bugs, and refining features to improve user experience for over 500 active contributors.",
         image:"https://raw.githubusercontent.com/github/explore/e838e6d3526495c83c195ed234acf109cb781f00/topics/hacktoberfest/hacktoberfest.png",

@@ -185,7 +185,11 @@ export default function Page() {
                     description={project.description}
                     location={project.location}
                     dates={project.dates}
-                    image={project.image}
+                    image={
+                      "image" in project && typeof project.image === "string"
+                        ? project.image
+                        : undefined
+                    }
                     links={project.links}
                   />
                 </BlurFade>
@@ -224,7 +228,11 @@ export default function Page() {
                     description={project.description}
                     location={project.location}
                     dates={project.dates}
-                    image={project.image}
+                    image={
+                      "image" in project && typeof project.image === "string"
+                        ? project.image
+                        : undefined
+                    }
                     links={project.links}
                   />
                 </BlurFade>

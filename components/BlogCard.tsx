@@ -5,6 +5,7 @@ import { Card, CardHeader } from "@/components/ui/card";
 import { cn, formatDate } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ChevronRightIcon, Calendar, Clock } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -47,9 +48,11 @@ export default function BlogCard({
       <Card className="flex hover:shadow-lg transition-shadow duration-300">
         <div className="flex-none">
           <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden bg-muted m-4">
-            <img
+            <Image
               src={thumbnailUrl}
               alt={title}
+              width={80}
+              height={80}
               className="w-full h-full object-cover"
             />
           </div>

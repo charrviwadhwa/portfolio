@@ -11,14 +11,25 @@ export const DATA = {
   summary:"I love building systems that make life easier for developers and communities. Whether it’s refining workflows, contributing to open source, or mentoring early-stage devs, I focus on clarity, impact, and continuous improvement. I share actively, learn in public, and care deeply about making engineering more accessible and collaborative.",
   avatarUrl: "/me1.png",
   skills: [
-    "React",
+    "Java",
+    "C",
+    "C++",
+    "HTML",
+    "CSS",
     "JavaScript",
     "Node.js",
-    "Express",
+    "Express.js",
     "MongoDB",
-    "TailwindCSS",
-    "Java",
-    "C++",
+    "Mongoose",
+    "React.js",
+    "PostgreSQL",
+    "Next.js",
+    "AWS (EC2, S3)",
+    "CI/CD Fundamentals",
+    "React Native",
+    "Git",
+    "NPM",
+    "LLM Integration"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -70,9 +81,9 @@ export const DATA = {
       logoUrl: "/karmapoints.png",
       start: "August 2025",
       end: "Present",
-      description:"Currently developing a social engagement suite with multi-platform sharing, self-serve fundraiser pages (goals, media, analytics), and actively updating technical documentation and changelogs with weekly progress visibility.",
+      description:"Conceptualized 'Karma Streaks' to drive daily retention and engineered a multi-platform fundraiser suite for 1,000+ users, reducing onboarding friction through standardized API documentation.",
     },
-    {
+      {
       company: "Shiv Nadar Foundation",
       badges: [],
       href: "",
@@ -122,25 +133,53 @@ export const DATA = {
   ],
   projects: [
      {
-      title: "Qrious",
+      title: "Swigit",
       href: "",
-      dates: "September 2025 ",
+      dates: "March 2026 ",
       active: true,
-      description:"Qrious is a QR-based attendance application designed to make attendance tracking faster, smarter, and error-free for educational institutions. It eliminates manual entry and proxy attendance by allowing students to mark attendance simply by scanning a unique QR code generated for each class session." 
+      description:"Swigit is the AI-native CLI that writes your documentation, blocks credential leaks, and synchronizes your repository natively—without breaking your flow state." 
       ,technologies: [
-        "React Native",
         "Nodejs",
-        "PostgreSQL","DrizzleORM"
+        "NPM","Commander.js"
       ],
       links: [
-       {
+        {
+          type: "Website",
+          href: "https://swigit-website.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
           type: "Source",
-          href: "https://github.com/charrviwadhwa/SIH2025",
+          href: "https://github.com/charrviwadhwa/swigit",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video:"/k.mp4"    },
+      video:"swigit.mp4"    },
+     {
+      title: "Hubble",
+      href: "",
+      dates: "October 2025 ",
+      active: true,
+      description:"Engineered a role-based event management system with JWT-based authentication and structured approval workflows, handling 100+ events across 10+ societies while ensuring data consistency and secure access control."
+      ,technologies: [
+        "React",
+        "Nodejs","Express","Postgres","DrizzleORM"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://hubble-lime-gamma.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/charrviwadhwa/hubble",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:"https://www.youtube.com/watch?v=yQPzhnAEQbI"    },
     {
       title: "GitPeek",
       href: "https://gitpeek1.vercel.app/",
@@ -201,37 +240,37 @@ export const DATA = {
       image: "",
       video: "/solvestack.mp4",
     },
-    {
-      title: "HackXplore",
-      href: "https://hackxplore.vercel.app/",
-      dates: "March 2025 - April 2025",
-      active: true,
-      description:
-        "HackXplore is an AI-powered platform that helps users discover and learn from top hackathon projects. It offers personalized recommendations, detailed project analyses, and interactive learning resources to inspire innovation and skill development.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "Supabase",
-        "TailwindCSS",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://hackxplore.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/charrviwadhwa/HackXplore",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/hackxplore.mp4",
-    },
+    
    
   ],
   hackathons: [
+    {
+      title: "HackCBS",
+      dates: "November 8th - 9th, 2025",
+      location: "Delhi, India",
+      description:
+        "Developed a mobile application focused on mental well-being that features intuitive habit tracking and mindfulness tools to help users manage stress and improve daily consistency.",
+        
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [{
+          title: "Github",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/charrviwadhwa/Calmind",
+        },],
+    },{
+      title: "SIH",
+      dates: "September 18th - 19th, 2025",
+      location: "Delhi, India",
+      description:
+        "Engineered a digital attendance system that utilizes dynamic QR code generation to eliminate manual errors and reduce roll-call time for large classrooms.",
+        
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [{
+          title: "Github",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/charrviwadhwa/SIH2025"
+        },],
+    },
     {
       title: "Hackemon",
       dates: "April 20rd - 23th, 2025",
@@ -240,7 +279,11 @@ export const DATA = {
         "Finalist amoung 300+ teams at Hackemon 2025, built an AI-powered platform to help users discover and learn from top hackathon projects. ",
         image:"https://media.licdn.com/dms/image/v2/D560BAQE3_mF30h9q_w/company-logo_200_200/company-logo_200_200/0/1731229537037/shebuildshack_logo?e=2147483647&v=beta&t=SJRf6OJ_pQk1RceaiMmepo-XKPmfZg2u46OLNtp3_Yk",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+      links: [{
+          title: "Github",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/charrviwadhwa/HackXplore",
+        },],
     },
     {
       title: "AM Hacks",
@@ -251,7 +294,11 @@ export const DATA = {
       image:
         "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/91dfaba48df54f32bdb7462ba86649e9/assets/logo/229.jpeg",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+      links: [{
+          title: "Github",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/charrviwadhwa/HackXplore",
+        },],
     },
     {
       title: "BVP HEX",
@@ -274,6 +321,14 @@ export const DATA = {
   ],
   opensource: [
     {
+      title: "Hacktoberfest",
+      dates: "Oct 1st - 31st, 2025",
+      location: "Super Contributer",
+      description:"Recognized as a Super Contributor for delivering high-impact code contributions and optimizing documentation across multiple repositories.",
+        image:"https://raw.githubusercontent.com/github/explore/e838e6d3526495c83c195ed234acf109cb781f00/topics/hacktoberfest/hacktoberfest.png",
+      links: [],
+    },
+    {
       title: "Girlscript Summer of Code",
       dates: "August 2025 - October 2025",
       location: "Mentor",
@@ -287,7 +342,14 @@ export const DATA = {
       location: "Contributer",
       description:"Enhanced 3 open-source projects during Hacktoberfest by submitting 8 pull requests, resolving 3 critical bugs, and refining features to improve user experience for over 500 active contributors.",
         image:"https://raw.githubusercontent.com/github/explore/e838e6d3526495c83c195ed234acf109cb781f00/topics/hacktoberfest/hacktoberfest.png",
-      links: [],
+      
+        links: [
+        {
+          title: "Github",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/charrviwadhwa/Open-Source-Contributions",
+        },
+      ]
     },
     
    

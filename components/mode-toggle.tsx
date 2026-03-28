@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { SunIcon, MoonIcon } from "lucide-react"; 
 
 export function ModeToggle() {
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
   // Use resolvedTheme for hydration-safe theme detection
   const currentTheme = resolvedTheme;

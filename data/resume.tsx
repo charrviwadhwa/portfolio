@@ -250,7 +250,8 @@ export const DATA = {
       location: "Delhi, India",
       description:
         "Developed a mobile application focused on mental well-being that features intuitive habit tracking and mindfulness tools to help users manage stress and improve daily consistency.",
-        
+      image: "", // Added missing property
+      video: "",
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [{
           title: "Github",
@@ -263,7 +264,8 @@ export const DATA = {
       location: "Delhi, India",
       description:
         "Engineered a digital attendance system that utilizes dynamic QR code generation to eliminate manual errors and reduce roll-call time for large classrooms.",
-        
+      image: "", // Added missing property
+      video: "", 
       mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [{
           title: "Github",
@@ -278,7 +280,8 @@ export const DATA = {
       description:
         "Finalist amoung 300+ teams at Hackemon 2025, built an AI-powered platform to help users discover and learn from top hackathon projects. ",
         image:"https://media.licdn.com/dms/image/v2/D560BAQE3_mF30h9q_w/company-logo_200_200/company-logo_200_200/0/1731229537037/shebuildshack_logo?e=2147483647&v=beta&t=SJRf6OJ_pQk1RceaiMmepo-XKPmfZg2u46OLNtp3_Yk",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      video:"",
+        mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [{
           title: "Github",
           icon: <Icons.github className="h-4 w-4" />,
@@ -293,7 +296,8 @@ export const DATA = {
         "Top 15 finalist amoung 2000+ registrations at AM Hacks IGDTUW 2025, built hackxplore, an AI-powered platform that offers personalized recommendations, detailed project analyses, and interactive learning resources to inspire innovation and skill development.",
       image:
         "https://devfolio-prod.s3.ap-south-1.amazonaws.com/hackathons/91dfaba48df54f32bdb7462ba86649e9/assets/logo/229.jpeg",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      video:"",
+        mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
       links: [{
           title: "Github",
           icon: <Icons.github className="h-4 w-4" />,
@@ -308,7 +312,8 @@ export const DATA = {
       icon: "public",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBRLKeUKBrz1iz75VB56BcSRTR4K_OoTfAQ&s",
-      links: [
+      video:"",
+        links: [
         {
           title: "Github",
           icon: <Icons.github className="h-4 w-4" />,

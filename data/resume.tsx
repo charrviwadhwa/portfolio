@@ -24,11 +24,11 @@ export const DATA = {
     "React.js",
     "PostgreSQL",
     "Next.js",
-    "AWS (EC2, S3)",
+    "AWS",
+    "Docker",
     "CI/CD Fundamentals",
     "React Native",
     "Git",
-    "NPM",
     "LLM Integration"
   ],
   navbar: [
@@ -101,7 +101,7 @@ export const DATA = {
     {
       school: "Maharaja Surajmal Institute of Technology",
       href: "https://msit.in",
-      degree: "BTech, Information Technology (CGPA 9.31)",
+      degree: "BTech, Information Technology (CGPA 9.34)",
       logoUrl: "/msit.png",
       start: "2023",
       end: "2027",
@@ -132,6 +132,29 @@ export const DATA = {
     },
   ],
   projects: [
+     {
+      title: "Unlure",
+      href: "",
+      dates: "May 2026 ",
+      active: true,
+      description:"Engineered a privacy-first digital wellbeing mobile application utilizing SQLite for local data persistence, implementing a custom habit-tracking engine that gamifies productivity through real-time streak calculations and user-defined focus goals." 
+      ,technologies: [
+        "React Native", "TypeScript", "SQLite (op-sqlite)", "Async Storage"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://unlure-website.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/charrviwadhwa/unlure",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:"unlure.mp4"    },
      {
       title: "Swigit",
       href: "",
@@ -211,35 +234,7 @@ export const DATA = {
       video:
         "/gitpeek.mp4",
     },
-    {
-      title: "SolveStack",
-      href: "https://solvestack.vercel.app/",
-      dates: "July 2025",
-      active: true,
-      description:
-        "SolveStack, an AI tool that breaks down DSA problems with clear reasoning, code highlights, and smart practice suggestions for faster learning.",
-      technologies: [
-       "React.js",
-        "JavaScript",
-        "Node.js",
-        "Google Gemini API",
-        "TailwindCSS",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://solvestack.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/charrviwadhwa/SolveStack",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "/solvestack.mp4",
-    },
+    
     
    
   ],

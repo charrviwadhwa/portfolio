@@ -133,6 +133,29 @@ export const DATA = {
   ],
   projects: [
      {
+      title: "Memora",
+      href: "",
+      dates: "July 2026 ",
+      active: true,
+      description:"Memora is a Chrome extension + web dashboard that lets you save any webpage, image, or link to a personal library with one click. You can organize saved items into Collections and search through everything from a clean web interface." 
+      ,technologies: [
+        "React", "TailwindCSS", "Node.js", "Express", "Drizzle ORM", "Neon", "PostgreSQL", "Cloudinary"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://memora-kappa-green.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/charrviwadhwa/memora",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:"memora.mp4"    },
+     {
       title: "Unlure",
       href: "",
       dates: "May 2026 ",
@@ -203,37 +226,6 @@ export const DATA = {
       ],
       image: "",
       video:"https://www.youtube.com/watch?v=yQPzhnAEQbI"    },
-    {
-      title: "GitPeek",
-      href: "https://gitpeek1.vercel.app/",
-      dates: "July 2025",
-      active: true,
-      description:
-        "GitPeek is an AI-powered tool designed to help developers instantly understand any public GitHub repository, even those without a README.",
-      technologies: [
-        "React.js",
-        "JavaScript",
-        "Node.js",
-        "Google Gemini API",
-        "TailwindCSS",
-        
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://gitpeek1.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/charrviwadhwa/SolveStack",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "/gitpeek.mp4",
-    },
     
     
    
